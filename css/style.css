@@ -1,0 +1,47 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+
+/* Header Styling */
+
+h1, h2, h3 {
+  text-align: center;
+  line-height: 100%;
+  font-family: font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+};
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.poster {
+  height: 500px;
+  width: 800px;
+  border: 1px dashed;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px 10px 10px;
+  background: grey;
+}
+
+/*"The Classy Roommate"*/
+
+
+/*"The Neurotic New Yorker"*/
+
+  
+/*"The Change the World Roommate"*/
+
+
+/*"The Art History Major"*/
+
+/*"New Theme"*/
+
