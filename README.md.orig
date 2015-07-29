@@ -1,4 +1,5 @@
-# Box Model Dorm Posters Design
+<<<<<<< HEAD
+# Dorm Posters
 
 You can tell a lot about a person by the posters they chose to buy and hang on their wall. I mean, that's commitment. You not only have to spend money, but you have to look at it every single day. 
 
@@ -190,11 +191,17 @@ Finally, we need to set the borders:
 
 ## Tell Me More About The Code
 
-Border, padding, and margin are all a part of the Box Model. The box model is a fundamental concept of CSS that determines a site layout and will dictate how the browser sizes our elements on the page. Every single HTML element (or piece of content) is viewed as a box with a width, height, padding (spacing inside), margin (spacing outside), and a border.
+Border, padding, and margin are all a part of the Box Model, is a way of thinking about how to arrange HTML elements on a web site.
+=======
+# Box Model 
+
+<img src="https://s3.amazonaws.com/after-school-assets/model-in-box.jpg" width="300" align="right" hspace="10">
+
+The box model is a fundamental concept of CSS that determines a site layout and will dictate how the browser sizes our elements on the page. Every single HTML element (or piece of content) is viewed as a box with a width, height, padding (spacing inside), margin (spacing outside), and a border.
 
 
 ## How It Works
-
+>>>>>>> aa35ea59cbaef97f768fd7a582837620cfb51b71
 
 Take a look at the image below to get a sense of how these properties come to play. The blue background is considered the content that you're styling. 
 
@@ -231,5 +238,9 @@ border: 10px solid purple;
 ### Padding
 
 Now let's say I want to have some padding between the text and the border. The border surrounds the element, which in this case is the text `Flatiron //`, so we'd need to set some padding! In [this example](http://jsfiddle.net/flatiron_precollege/hwk5yz4t/), we set `margin: 20px;` which separates 20px from the top, right, left, and bottom of the div. 
+<<<<<<< HEAD
 
 
+
+=======
+>>>>>>> aa35ea59cbaef97f768fd7a582837620cfb51b71
