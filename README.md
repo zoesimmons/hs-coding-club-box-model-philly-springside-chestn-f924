@@ -120,6 +120,7 @@ First, let's resize the image using the `height` css property. Inside of `css/st
 #picasso {
   height: 300px;
 }
+```
 
 Now, our images are the same height and fit on the wall properly! Next up, we need to put a frame around both images. We can't just add a border to each poster, because that would frame them separately. If you look at `index.html`, you'll notice that both `img` tags are nested inside of a `div` with the class `double`.
 
