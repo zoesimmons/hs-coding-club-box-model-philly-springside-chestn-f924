@@ -174,7 +174,7 @@ Next, we need to center both images, but auto setting the `margin-left` and `mar
 
 Finally, we need to set the borders: 
 
-```
+```css
 #mj {
   height: 200px;
   display: block;
@@ -190,6 +190,7 @@ Finally, we need to set the borders:
   margin-right: auto;
   border: 10px solid purple;
 }
+```
 
 ## Tell Me More About The Code
 
