@@ -1,5 +1,7 @@
 # Box Model Dorm Posters Design
 
+<img src="https://s3.amazonaws.com/after-school-assets/posters.jpg" alt="Posters" align="right" width="300" hspace="10">
+
 You can tell a lot about a person by the posters they chose to buy and hang on their wall. I mean, that's commitment. You not only have to spend money, but you have to look at it every single day. 
 
 This becomes really important as you start to select your roommate for college. You have to live with this person (and their posters) every day for a full year.
