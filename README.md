@@ -16,25 +16,28 @@ Open this lesson in Nitrous, by clicking the `Open In Nitrous` button in learn.
 
 ### Step 2:
 
-Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
+Open `index.html` in the browser by running in terminal ` `python -m SimpleHTTPServer 3000`. 
 
 Once you have the server running, select `preview` and then `port 3000`.
 
 <img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
 
-You'll notice so far, the site is just a blank canvas of categories for each type of poster. You're going to be responsible for putting the posters in the right categories, and framing them (you're the one doing the judging so you decide what looks best).
+You'll notice so far, the site is just a blank canvas of categories for each type of poster. You're going to be responsible for arranging the posters nicely on the wall, and framing them (you're the one doing the judging so you decide what look's best).
 
-You'll code your solution in `css/style.css`. Go ahead and open that file in the Nitrous text editor, as well as `index.html`.
+You'll code your solution in `css/style.css`. Go ahead and open that file in Nitrous, as well as `index.html`.
 
 ### Step 3:
 
-Let's take a look inside the `images` directory. You'll notice several posters: Audrey Hepburn, Michael Jordan, New York City, Picasso, Beyonce, Andy Warhol, Woody Allen, and the New York City skyline. The goal is to put each poster in an appropriate category, and add a snazzy frame.
+Let's take a look inside the `images` directory. You'll notice several posters: Audrey Hepburn, Michael Jordan, New York City, Picasso, Beyonce, Andy Warhol, Woody Allen, and the New York City skyline. The goal is to put each poster in their appropriate category and add a snazzy frame.
+
 
 ### Step 4: "The Classy Roommate"
 
+If you look inside of `index.html`, you'll notice this image is already in the HTML, with the ID `audrey`. We can use this ID as our CSS selector.. 
+
 <img id="audrey"  src="images/audrey.jpg" alt="Audrey Hepburn" align="right" width="100px" hspace="10">
 
-First, we need to center the image. Inside of `css/style.css`:
+First, we need to center the image. Copy and paste the following code inside of `css/style.css` right after the comment `/*"The Classy Roommate"*/`:
 
 ```css
 #audrey {
@@ -46,7 +49,7 @@ First, we need to center the image. Inside of `css/style.css`:
 
 Suddenly we're using a whole bunch of CSS properties we've never seen before!
 
-`margin` is responsible for the space around the image we're styling. You can think of it as the space between different pieces of content. In the case of the Audrey poster, we're talking about the space between the sides of the grey box and the poster. If we want the image to be centered, we want the same margin on the left and the right. `margin-left` and `margin-right` are two CSS properties that we set to `auto` meaning it will automatically center the image.
+`margin` is responsible for the space around the image we're styling. You can think of it as the space between pieces of content. In the case of the Audrey poster, we're talking about the space between the sides of the grey box and the poster. If we want the image to be centered, we want the same margin on the left and the right. `margin-left` and `margin-right` are two CSS properties that we set to `auto` meaning it will automatically center the image.
 
 `display: block;` means that the image will take up the entire width of the grey box. Nothing can fill in next to it. Without the display block, we wouldn't have a margin to the left, because images by default will fill in next to each other.
 
@@ -57,6 +60,7 @@ And now to add the border:
   margin-left: auto;
   margin-right: auto;
   display: block;
+  /*Add this line to your CSS!*/
   border: 15px solid red;
 }
 ```
@@ -70,8 +74,9 @@ And now to add the border:
 <img src="images/newyork.jpg" align="right" width="100px" hspace="10">
 
 
-If we look at the page in browser, we can see that the Woody Allen poster is much smaller than the New York City poster. In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
+If we look at the page in browser in the developer tools, we can see that the Woody Allen poster is much smaller than the New York City poster. In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
 
+We're using the ID `woody`, defined on the `img` tag in `index.html` to style the Woody Allen poster. Copy and paste the following code inside of `css/style.css` underneath the comment `/*"The Neurotic New Yorker"*/`:
 ```CSS
 #woody {
   padding-top: 55.5px;
@@ -99,7 +104,7 @@ And now we need to set the border - again `border: 15px solid red;`. You can cha
 }
 ```
 
-And now for the New York City poster, we just need to add a border. 
+And now for the New York City poster, we just need to add a border. Copy and paste the following code inside of `css/style.css` underneath the CSS for the Woody Allen Poster:
 
 ```css
 #newyork {
@@ -109,9 +114,12 @@ And now for the New York City poster, we just need to add a border.
 
 ### Step 6: "The Art History Major"
 
+<img src="images/picasso.jpg" align="right" width="100px" hspace="10">
+<img src="images/warhol.jpg" align="right" width="100px" hspace="10">
+
 For this one, we need to resize the images so that they fit on the wall, and then frame them together in one big frame.
 
-First, let's resize the image using the `height` css property. Inside of `css/style.css`:
+First, let's resize the image using the `height` css property. Copy and paste the following code inside nside of `css/style.css` underneath the `/*"The Art History Major"*/` comment:
 
 ```css
 #warhol {
@@ -125,7 +133,7 @@ First, let's resize the image using the `height` css property. Inside of `css/st
 
 Now, our images are the same height and fit on the wall properly! Next up, we need to put a frame around both images. We can't just add a border to each poster, because that would frame them separately. If you look at `index.html`, you'll notice that both `img` tags are nested inside of a `div` with the class `double`.
 
-That class is what we want to use as our CSS selector and apply styling (like the border to).
+That class is what we want to use as our CSS selector and apply styling (like the border to). Let's add this CSS to `css/style.css` too:
 
 ```css
 .double {
@@ -143,9 +151,13 @@ Finally, you'll notice the grey background is still visible between the posters.
 
 ### Step 7: "Pop Culture Fanatic"
 
+<img src="images/michael-jordan.jpg" align="right" width="100px" hspace="10">
+<img src="images/beyonce.jpg" align="right" width="100px" hspace="10">
+
 For these posters, we want to stack them on top of each other, center them, and add a unique border to each one.
 
-First, we need to resize both images. Inside of `css/style.css`:
+First, we need to resize both images. Copy and paste the following code inside of `css/style.css` underneath the comment `
+/*"Pop Culture Fanatic"*/`:
 
 ```css
 #mj {
@@ -236,5 +248,16 @@ border: 10px solid purple;
 ### Padding
 
 Now let's say I want to have some padding between the text and the border. The border surrounds the element, which in this case is the text `Flatiron //`, so we'd need to set some padding! In [this example](http://jsfiddle.net/flatiron_precollege/hwk5yz4t/), we set `margin: 20px;` which separates 20px from the top, right, left, and bottom of the div. 
+
+
+### Additional Resources
+
+1 [Mozilla Developer Network Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/box_model)
+
+2 [W3C Schools Box Model](http://www.w3schools.com/css/css_boxmodel.asp)
+
+3 [CSS Box Model Tricks](https://css-tricks.com/the-css-box-model/)
+
+
 
 
