@@ -16,21 +16,22 @@ Open this lesson in Nitrous, by clicking the `Open In Nitrous` button in learn.
 
 ### Step 2:
 
-Open `index.html` in the browser by running in terminal ` `python -m SimpleHTTPServer 3000`. 
+Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
 
 Once you have the server running, select `preview` and then `port 3000`.
 
 <img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
 
-You'll notice so far, the site is just a blank canvas of categories for each type of poster. You're going to be responsible for putting the posters in the right categories, and framing them (you're the one doing the judging so you decide what look's best).
+You'll notice so far, the site is just a blank canvas of categories for each type of poster. You're going to be responsible for putting the posters in the right categories, and framing them (you're the one doing the judging so you decide what looks best).
 
-You'll code your solution in `css/style.css`. Go ahead and open that file in Nitrous, as well as `index.html`.
+You'll code your solution in `css/style.css`. Go ahead and open that file in the Nitrous text editor, as well as `index.html`.
 
 ### Step 3:
 
-Let's take a look inside the `images` directory. You'll notice several posters: Audrey Hepburn, Michael Jordan, New York City, Picasso, Beyonce, Andy Warhol, Woody Allen, and the Kardashians. The goal is to put each poster in an appropriate category, and add a snazzy border.
+Let's take a look inside the `images` directory. You'll notice several posters: Audrey Hepburn, Michael Jordan, New York City, Picasso, Beyonce, Andy Warhol, Woody Allen, and the New York City skyline. The goal is to put each poster in an appropriate category, and add a snazzy frame.
 
 ### Step 4: "The Classy Roommate"
+
 <img id="audrey"  src="images/audrey.jpg" alt="Audrey Hepburn" align="right" width="100px" hspace="10">
 
 First, we need to center the image. Inside of `css/style.css`:
@@ -45,7 +46,7 @@ First, we need to center the image. Inside of `css/style.css`:
 
 Suddenly we're using a whole bunch of CSS properties we've never seen before!
 
-`margin` is responsible for the space around the image we're styling. You can think of it as the space between pieces of content. In the case of the Audrey poster, we're talking about the space between the sides of the grey box and the poster. If we want the image to be centered, we want the same margin on the left and the right. `margin-left` and `margin-right` are two CSS properties that we set to `auto` meaning it will automatically center the image.
+`margin` is responsible for the space around the image we're styling. You can think of it as the space between different pieces of content. In the case of the Audrey poster, we're talking about the space between the sides of the grey box and the poster. If we want the image to be centered, we want the same margin on the left and the right. `margin-left` and `margin-right` are two CSS properties that we set to `auto` meaning it will automatically center the image.
 
 `display: block;` means that the image will take up the entire width of the grey box. Nothing can fill in next to it. Without the display block, we wouldn't have a margin to the left, because images by default will fill in next to each other.
 
