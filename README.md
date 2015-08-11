@@ -76,7 +76,7 @@ If we look at the page in browser in the developer tools, we can see that the Wo
 
 We're using the ID `woody`, defined on the `img` tag in `index.html` to style the Woody Allen poster. Copy and paste the following code inside of `css/style.css` underneath the comment `/*"The Neurotic New Yorker"*/`:
 
-```CSS
+```css
 #woody {
   padding-top: 55.5px;
   padding-bottom: 55.5px;
