@@ -10,13 +10,11 @@ This becomes really important as you start to select your roommate for college. 
 
 ### Step 1:
 
-Open this lesson in Nitrous, by clicking the `Open In Nitrous` button in learn.
-
-<img src="https://s3.amazonaws.com/after-school-assets/open-in-nitrous.png">
+Take a Look at the `How To: Work On A Lab` to walk you through how to fork and clone this lesson.
 
 ### Step 2:
 
-Open `index.html` in the browser by running in terminal ` `python -m SimpleHTTPServer 3000`. 
+Open `index.html` in the browser by running in terminal `python -m SimpleHTTPServer 3000`. 
 
 Once you have the server running, select `preview` and then `port 3000`.
 
