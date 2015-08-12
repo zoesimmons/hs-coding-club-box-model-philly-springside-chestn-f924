@@ -20,9 +20,9 @@ Once you have the server running, select `preview` and then `port 3000`.
 
 <img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
 
-You'll notice so far, the site is just a blank canvas of categories for each type of poster. You're going to be responsible for arranging the posters nicely on the wall, and framing them (you're the one doing the judging so you decide what look's best).
+You'll notice so far, the site is just a mess of images on a grey and white screen. You're going to be responsible for arranging the posters nicely on the wall, and framing them (you're the one doing the judging so you decide what look's best).
 
-You'll code your solution in `css/style.css`. Go ahead and open that file in Nitrous, as well as `index.html`.
+You'll code your solution in `css/style.css`. Go ahead and open that file in the Nitrous text editor, as well as `index.html`.
 
 ### Step 3:
 
@@ -31,11 +31,11 @@ Let's take a look inside the `images` directory. You'll notice several posters: 
 
 ### Step 4: "The Classy Roommate"
 
-If you look inside of `index.html`, you'll notice this image is already in the HTML, with the ID `audrey`. We can use this ID as our CSS selector.. 
-
 <img id="audrey"  src="images/audrey.jpg" alt="Audrey Hepburn" align="right" width="100px" hspace="10">
 
-First, we need to center the image. Copy and paste the following code inside of `css/style.css` right after the comment `/*"The Classy Roommate"*/`:
+If you look inside of `index.html`, you'll notice this image is already in the HTML, with the ID `audrey`. We can use this ID as our CSS selector. 
+
+First, we need to center the image. Copy the following code and paste it inside of `css/style.css` right after the comment `/*"The Classy Roommate"*/`:
 
 ```css
 #audrey {
@@ -49,7 +49,7 @@ Suddenly we're using a whole bunch of CSS properties we've never seen before!
 
 `margin` is responsible for the space around the image we're styling. You can think of it as the space between pieces of content. In the case of the Audrey poster, we're talking about the space between the sides of the grey box and the poster. If we want the image to be centered, we want the same margin on the left and the right. `margin-left` and `margin-right` are two CSS properties that we set to `auto` meaning it will automatically center the image.
 
-`display: block;` means that the image will take up the entire width of the grey box. Nothing can fill in next to it. Without the display block, we wouldn't have a margin to the left, because images by default will fill in next to each other.
+`display: block;` means that the image will take up the entire width of the grey box. Nothing can fill in next to it. Without the `display: block;`, we wouldn't have a margin to the left, because by default, images will fill in next to each other.
 
 And now to add the border:
 
@@ -71,8 +71,7 @@ And now to add the border:
 <img src="images/woody.jpg" align="right" width="100px" hspace="10">
 <img src="images/newyork.jpg" align="right" width="100px" hspace="10">
 
-
-If we look at the page in browser in the developer tools, we can see that the Woody Allen poster is much smaller than the New York City poster. In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
+For these two posters, we want to frame them individually, but have the frames be the same size. If we look at the page in browser in the developer tools, we can see that the Woody Allen poster is much smaller than the New York City poster. In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
 
 We're using the ID `woody`, defined on the `img` tag in `index.html` to style the Woody Allen poster. Copy and paste the following code inside of `css/style.css` underneath the comment `/*"The Neurotic New Yorker"*/`:
 
@@ -86,20 +85,22 @@ We're using the ID `woody`, defined on the `img` tag in `index.html` to style th
 }
 ```
 
-Next, we need to use padding to make this poster bigger. Padding is the space around the element, that goes inside the border. `padding-top` add space to the top, `padding-bottom` adds space to the bottom, `padding-left` to the left and `padding-right` to the right. If we want this image to be 236px wide, we need to add `32.5px` of padding to the right and the left. In order to make the image `364px` tall, we need to add `55.5px` of padding to the bottom and the top.
+Next, we need to use padding to make this poster bigger. `padding` is the space around the element, that goes inside the border. `padding-top` adds space to the top, `padding-bottom` adds space to the bottom, `padding-left` to the left, and `padding-right` to the right. If we want this image to be 236px wide, we need to add `32.5px` of padding to the right and the left. In order to make the image `364px` tall, we need to add `55.5px` of padding to the bottom and the top.
 
 We also need to set the `background-color` to white so that the white fills in that padding.
 
-And now we need to set the border - again `border: 15px solid red;`. You can change up the value of the border property to be smaller pixels in width, or dashed in style, or even purple in color!for the NYC poster, we add the following to `css/style.css`:
+And now we need to set the border - again `border: 15px solid red;`. You can change up the value of the border property to be smaller pixels in width, or dashed in style, or even purple in color! Copy and paste the border below in `css/style.css`:
+
 
 ```css
 #woody {
-    border: 15px solid red;
     padding-top: 55.5px;
     padding-bottom: 55.5px;
     padding-left: 32.5px;
     padding-right: 32.5px;
     background-color: white; 
+    <!-- Add this to your CSS! -->
+    border: 15px solid red;
 }
 ```
 
@@ -118,7 +119,7 @@ And now for the New York City poster, we just need to add a border. Copy and pas
 
 For this one, we need to resize the images so that they fit on the wall, and then frame them together in one big frame.
 
-First, let's resize the image using the `height` css property. Copy and paste the following code inside nside of `css/style.css` underneath the `/*"The Art History Major"*/` comment:
+First, let's resize the images using the `height` css property. Copy and paste the following code inside nside of `css/style.css` underneath the `/*"The Art History Major"*/` comment:
 
 ```css
 #warhol {
@@ -144,9 +145,10 @@ That class is what we want to use as our CSS selector and apply styling (like th
 
 First we set a 20px wide, solid navy border around both images using the `border` property. 
 
-But you'll notice that both images are still flushed to the left. We can use the `text-align` property and give it the value `center` to center the images. 
 
-Finally, you'll notice the grey background is still visible between the posters. Lets set `background-color: white` to act as a matte behind the posters.
+The `text-align:center;` will center our image. Without that line of CSS, both images would be flushed all the way to the left side of the grey box.
+
+The `background-color: white;` acts as a matte behind the posters. Without it, we would see the grey between the images and the border.
 
 ### Step 7: "Pop Culture Fanatic"
 
@@ -173,13 +175,15 @@ Next, we need to center both images, but auto setting the `margin-left` and `mar
 ```css
 #mj {
   height: 200px;
+  <!-- Add this to your CSS -->
   margin-left: auto;
   margin-right: auto;
 }
 
 #beyonce {
   height: 300px;
-   margin-left: auto;
+  <!-- Add this to your CSS -->
+  margin-left: auto;
   margin-right: auto;
 }
 ```
@@ -192,6 +196,7 @@ Finally, we need to set the borders:
   display: block;
   margin-left: auto;
   margin-right: auto;
+  <!-- Add this to your CSS -->
   border: 7px solid black;
 }
 
@@ -200,13 +205,14 @@ Finally, we need to set the borders:
   display: block;
   margin-left: auto;
   margin-right: auto;
+  <!-- Add this to your CSS -->
   border: 10px solid purple;
 }
 ```
 
 ## Tell Me More About The Code
 
-Border, padding, and margin are all a part of the Box Model. The box model is a fundamental concept of CSS that determines a site layout and will dictate how the browser sizes our elements on the page. Every single HTML element (or piece of content) is viewed as a box with a width, height, padding (spacing inside), margin (spacing outside), and a border.
+Border, padding, and margin are all a part of the Box Model. The Box Model is a fundamental concept of CSS that determines a site layout and will dictate how the browser sizes our elements on the page. Every single HTML element (or piece of content) is viewed as a box with a width, height, padding (spacing inside), margin (spacing outside), and a border.
 
 
 ## How It Works
