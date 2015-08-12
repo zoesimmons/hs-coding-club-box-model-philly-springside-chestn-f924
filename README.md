@@ -10,7 +10,7 @@ This becomes really important as you start to select your roommate for college. 
 
 ### Step 1:
 
-Take a Look at the `How To: Work On A Lab` to walk you through how to fork and clone this lesson.
+Take a Look at the `How To: Fork and Clone A Lab` to walk you through how to fork and clone this lesson.
 
 ### Step 2:
 
