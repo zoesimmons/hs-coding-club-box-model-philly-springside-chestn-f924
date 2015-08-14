@@ -10,7 +10,9 @@ This becomes really important as you start to select your roommate for college. 
 
 ### Step 1:
 
-Take a Look at the `How To: Fork and Clone A Lab` to walk you through how to fork and clone this lesson.
+Click `Open in Nitrous` at the top of this page to bring this lesson down to Nitrous so you can edit files in the text editor.
+
+<img src="https://s3.amazonaws.com/after-school-assets/open-in-nitrous.png">
 
 ### Step 2:
 
