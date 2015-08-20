@@ -2,7 +2,7 @@
 
 <img src="https://s3.amazonaws.com/after-school-assets/posters.jpg" alt="Posters" align="right" width="300" hspace="10">
 
-You can tell a lot about a person by the posters they chose to buy and hang on their wall. I mean, that's commitment. You not only have to spend money, but you have to look at it every single day. 
+You can tell a lot about a person by the posters they choose to buy and hang on their wall. I mean, that's commitment. You not only have to spend money, but you have to look at it every single day. 
 
 This becomes really important as you start to select your roommate for college. You have to live with this person (and their posters) every day for a full year.
 
@@ -22,7 +22,7 @@ Once you have the server running, select `preview` and then `port 3000`.
 
 <img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
 
-You'll notice so far, the site is just a mess of images on a grey and white screen. You're going to be responsible for arranging the posters nicely on the wall, and framing them (you're the one doing the judging so you decide what look's best).
+You'll notice so far, the site is just a mess of images on a grey and white screen. You're going to be responsible for arranging the posters nicely on the wall, and framing them (you're the one doing the judging so you decide what looks best).
 
 You'll code your solution in `css/style.css`. Go ahead and open that file in the Nitrous text editor, as well as `index.html`.
 
@@ -33,7 +33,7 @@ Let's take a look inside the `images` directory. You'll notice several posters: 
 
 ### Step 4: "The Classy Roommate"
 
-<img id="audrey"  src="images/audrey.jpg" alt="Audrey Hepburn" align="right" width="100px" hspace="10">
+<img id="audrey"  src="https://s3.amazonaws.com/after-school-assets/audrey-poster.jpg" alt="Audrey Hepburn" align="right" width="100px" hspace="10">
 
 If you look inside of `index.html`, you'll notice this image is already in the HTML, with the ID `audrey`. We can use this ID as our CSS selector. 
 
@@ -70,8 +70,8 @@ And now to add the border:
 
 ### Step 5: "The Neurotic New Yorker"
 
-<img src="images/woody.jpg" align="right" width="100px" hspace="10">
-<img src="images/newyork.jpg" align="right" width="100px" hspace="10">
+<img src="https://s3.amazonaws.com/after-school-assets/woody-poster.jpg" align="right" width="100px" hspace="10">
+<img src="https://s3.amazonaws.com/after-school-assets/newyork-poster.jpg" align="right" width="100px" hspace="10">
 
 For these two posters, we want to frame them individually, but have the frames be the same size. If we look at the page in browser in the developer tools, we can see that the Woody Allen poster is much smaller than the New York City poster. In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
 
@@ -116,8 +116,8 @@ And now for the New York City poster, we just need to add a border. Copy and pas
 
 ### Step 6: "The Art History Major"
 
-<img src="images/picasso.jpg" align="right" width="100px" hspace="10">
-<img src="images/warhol.jpg" align="right" width="100px" hspace="10">
+<img src="https://s3.amazonaws.com/after-school-assets/picasso-poster.jpg" align="right" width="100px" hspace="10">
+<img src="https://s3.amazonaws.com/after-school-assets/warhol-poster.jpg" align="right" width="100px" hspace="10">
 
 For this one, we need to resize the images so that they fit on the wall, and then frame them together in one big frame.
 
@@ -154,8 +154,8 @@ The `background-color: white;` acts as a matte behind the posters. Without it, w
 
 ### Step 7: "Pop Culture Fanatic"
 
-<img src="images/michael-jordan.jpg" align="right" width="100px" hspace="10">
-<img src="images/beyonce.jpg" align="right" width="100px" hspace="10">
+<img src="https://s3.amazonaws.com/after-school-assets/michael-jordan-poster.jpg" align="right" width="100px" hspace="10">
+<img src="https://s3.amazonaws.com/after-school-assets/beyonce-poster.jpg" align="right" width="100px" hspace="10">
 
 For these posters, we want to stack them on top of each other, center them, and add a unique border to each one.
 
