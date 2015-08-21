@@ -22,13 +22,13 @@ Once you have the server running, select `preview` and then `port 3000`.
 
 <img src="https://s3.amazonaws.com/after-school-assets/nitrous-preview.png" alt="nitrous preview">
 
-You'll notice so far, the site is just a mess of images on a grey and white screen. You're going to be responsible for arranging the posters nicely on the wall, and framing them (you're the one doing the judging so you decide what looks best).
+You'll notice so far, the site is just a mess of images on a grey and white screen. You're going to be responsible for arranging the posters nicely on the wall and framing them (you're the one doing the judging so you decide what looks best).
 
 You'll code your solution in `css/style.css`. Go ahead and open that file in the Nitrous text editor, as well as `index.html`.
 
 ### Step 3:
 
-Let's take a look inside the `images` directory. You'll notice several posters: Audrey Hepburn, Michael Jordan, New York City, Picasso, Beyonce, Andy Warhol, Woody Allen, and the New York City skyline. The goal is to put each poster in their appropriate category and add a snazzy frame.
+Let's take a look inside the `images` directory. You'll notice several posters: Audrey Hepburn, Michael Jordan, New York City, Picasso, Beyoncé, Andy Warhol, Woody Allen, and the New York City skyline. The goal is to put each poster in their appropriate category and add a snazzy frame.
 
 
 ### Step 4: "The Classy Roommate"
@@ -73,7 +73,11 @@ And now to add the border:
 <img src="https://s3.amazonaws.com/after-school-assets/woody-poster.jpg" align="right" width="100px" hspace="10">
 <img src="https://s3.amazonaws.com/after-school-assets/newyork-poster.jpg" align="right" width="100px" hspace="10">
 
-For these two posters, we want to frame them individually, but have the frames be the same size. If we look at the page in browser in the developer tools, we can see that the Woody Allen poster is much smaller than the New York City poster. In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
+For these two posters, we want to frame them individually, but have the frames be the same size. If we look at the page in the browser in the developer tools, we can see that the Woody Allen poster is much smaller than the New York City poster. You can look at the image size by just hovering your mouse over the image text like this:
+
+<img src="https://s3.amazonaws.com/after-school-assets/image-size-inspect-element.png">
+
+In fact, the Woody Allen poster is 171 x 253 pixels and the NYC poster is 236 x 364 pixels. If we want the frame to be the same size around both posters, we have to increase the size around the Woody Allen Poster.
 
 We're using the ID `woody`, defined on the `img` tag in `index.html` to style the Woody Allen poster. Copy and paste the following code inside of `css/style.css` underneath the comment `/*"The Neurotic New Yorker"*/`:
 
@@ -135,7 +139,7 @@ First, let's resize the images using the `height` css property. Copy and paste t
 
 Now, our images are the same height and fit on the wall properly! Next up, we need to put a frame around both images. We can't just add a border to each poster, because that would frame them separately. If you look at `index.html`, you'll notice that both `img` tags are nested inside of a `div` with the class `double`.
 
-That class is what we want to use as our CSS selector and apply styling (like the border to). Let's add this CSS to `css/style.css` too:
+That class is what we want to use as our CSS selector and apply styling (like the border) to. Let's add this CSS to css/style.css too
 
 ```css
 .double {
@@ -230,11 +234,17 @@ Take a look at the image below to get a sense of how these properties come to pl
  
 <img src="https://s3.amazonaws.com/after-school-assets/box_model.png">
 
-Take a look at [this code example](http://jsfiddle.net/flatiron_school/jtFgz/) to see how we can use the box model to size and separate two different divs on a page.
+Take a look at [this code example](http://jsfiddle.net/flatiron_school/jtFgz/) to see how we can use the box model to size and separate two different divs on a page. You'll notice in this example, two aqua boxes. The HTML is written in the top left corner, the CSS in the top right corner, and the output of both HTML and CSS in the bottom right corner. 
+
+See if you can modify the two boxes. Using the classes defined on the two divs, see if you can change the borders. What happens if you make the padding 50px on the bottom box? What about adding a margin of 20px to the top box?
+
+You can run your changes by pressing the button `Run` in the top left corner:
+
+<img src="https://s3.amazonaws.com/after-school-assets/jsfiddle-run.png">
 
 ### Margin
 
-Let's say I have two divs on a page, and I want to separate them by 50px. I would use the `margin` CSS property to separate them. In [this example](http://jsfiddle.net/flatiron_precollege/g2b6j6gh/2/) we have two divs, one orange and one blue. Each div has `margin: 50px;` set, which means there is 50px of space from the left, top, right, and bottom from any other element. There is no way to get another piece of content closer to either div on any side.
+Let's say I have two divs on a page, and I want to separate them by 520px. I would use the `margin` CSS property to separate them. In [this example](http://jsfiddle.net/flatiron_precollege/g2b6j6gh/2/) we have two divs, one orange and one blue. Each div has `margin: 50px;` set, which means there is 50px of space from the left, top, right, and bottom from any other element. There is no way to get another piece of content closer to either div on any side.
 
 ### Border
 
@@ -246,7 +256,7 @@ border-color: purple;
 border-width: 10px;
 ```
 
-You can also short-hand the whole thing:
+You can also short-hand the whole thing. The order here is important. The `border-width` goes first, followed by `border-style`, and the `border-color`
 
 ```css
 border: 10px solid purple;
@@ -254,7 +264,7 @@ border: 10px solid purple;
 
 ### Padding
 
-Now let's say I want to have some padding between the text and the border. The border surrounds the element, which in this case is the text `Flatiron //`, so we'd need to set some padding! In [this example](http://jsfiddle.net/flatiron_precollege/hwk5yz4t/), we set `margin: 20px;` which separates 20px from the top, right, left, and bottom of the div. 
+Let's take [this code](http://jsfiddle.net/flatiron_precollege/hwk5yz4t/). I want to have some padding between the text and the border. The border surrounds the element, which in this case is the text `Flatiron //`, so we'd need to set some padding! In this example, we set `margin: 20px;` which separates 20px from the top, right, left, and bottom of the div. 
 
 
 ### Additional Resources
