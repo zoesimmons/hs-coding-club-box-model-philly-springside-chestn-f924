@@ -272,7 +272,7 @@ Last step, as always, is to mark this lesson as done on Learn and backup your wo
 
 ### Share Share Share!
 
-We love it when you show us your work! Screen shot the posters or your code and share with **\#flatironcodeclub** and **\#dormposters**
+We love it when you show us your work! Screenshot the posters or your code and share with **\#flatironcodeclub** and **\#dormposters**
 
 
 ### Additional Resources
