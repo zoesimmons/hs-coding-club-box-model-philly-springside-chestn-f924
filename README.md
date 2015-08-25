@@ -256,6 +256,10 @@ border: 10px solid purple;
 
 Now let's say I want to have some padding between the text and the border. The border surrounds the element, which in this case is the text `Flatiron //`, so we'd need to set some padding! In [this example](http://jsfiddle.net/flatiron_precollege/hwk5yz4t/), we set `margin: 20px;` which separates 20px from the top, right, left, and bottom of the div. 
 
+### Share Share Share!
+
+We love it when you show us your work! Screen shot the posters or your code and share with **\#flatironcodeclub** and **\#dormposters**
+
 
 ### Additional Resources
 
