@@ -286,3 +286,5 @@ We love it when you show us your work! Screenshot the posters or your code and s
 
 
 
+
+<a href='https://learn.co/lessons/hs-coding-club-box-model' data-visibility='hidden'>View this lesson on Learn.co</a>
