@@ -287,4 +287,4 @@ We love it when you show us your work! Screenshot the posters or your code and s
 
 
 
-<a href='https://learn.co/lessons/hs-coding-club-box-model' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/hs-coding-club-box-model' title='Box Model Dorm Posters Design'>Box Model Dorm Posters Design</a> on Learn.co and start learning to code for free.</p>
