@@ -33,14 +33,89 @@ h3 {
 }
 
 /*"The Classy Roommate"*/
-
+#audrey {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#audrey {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /*Add this line to your CSS!*/
+  border: 15px solid red;
+}
 
 
 /*"The Neurotic New Yorker"*/
-
+#woody {
+  padding-top: 55.5px;
+  padding-bottom: 55.5px;
+  padding-left: 32.5px;
+  padding-right: 32.5px;
+  background-color: white;
+}
+#woody {
+    padding-top: 55.5px;
+    padding-bottom: 55.5px;
+    padding-left: 32.5px;
+    padding-right: 32.5px;
+    background-color: white;
+    border: 15px solid red;
+}
+#newyork {
+  border: 15px solid red;
+}
 
 /*"The Art History Major"*/
+#warhol {
+  height: 300px;
+}
+
+#picasso {
+  height: 300px;
+}
+.double {
+  border: 20px solid navy;
+  text-align: center;
+  background-color: white;
+}
 
 
 /*"Pop Culture Fanatic"*/
+#mj {
+  height: 200px;
+}
+
+#beyonce {
+  height: 300px;
+}
+#mj {
+  height: 200px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#beyonce {
+  height: 300px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+#mj {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px solid black;
+}
+
+#beyonce {
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 10px solid purple;
+}
 
